@@ -1,0 +1,14 @@
+.navbar{
+  display: flex;
+  justify-content: flex-start!important;
+  background-color: #535355;
+  color: white;
+  margin-bottom: 10px;
+  a {
+    margin: 15px;
+    cursor: pointer;
+  }
+  .disabled {
+    color: grey!important;
+  }
+}
