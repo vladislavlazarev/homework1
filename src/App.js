@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
-import Navbar from "./components/Navbar/Navbar";
-import Jumbotron from "./components/Jumbotron/Jumbotron";
-import CardContainer from "./components/CardContainer/CardContainer";
-import Card from "./components/Card/Card";
+import React, { Component } from "react";
+import DocPage from "./pages/DocPage/DocPage";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
 class App extends Component {
   render() {
-    return(
-        <>
-      <Navbar/>
-      <Jumbotron/>
-      <CardContainer/>
-      </>
-    )
+    return (
+      <BrowserRouter>
+        <Switch>
+          <Route path="/:id" component={DocPage} />
+        </Switch>
+      </BrowserRouter>
+    );
   }
 }
 
